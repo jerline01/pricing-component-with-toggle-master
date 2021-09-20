@@ -1,0 +1,166 @@
+
+
+body {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  background-color: hsl(240, 78%, 98%);
+}
+
+.img-top {
+  position: absolute;
+  top: 0;
+  left: 70vw;
+
+}
+
+/* .img-bottom {
+  position: absolute;
+  bottom: 10vw;
+  left: 10vw;
+  z-index: -1;
+} */
+
+h2 {
+  padding-bottom: 2%;
+  color: hsl(233, 13%, 49%);
+}
+
+h1 {
+  display: inline-block;
+}
+
+.header {
+  padding: 5%;
+}
+
+.annual {
+  padding-right: 20px;
+  color: hsl(233, 13%, 49%);
+}
+
+.month {
+  padding-left: 20px;
+  color: hsl(233, 13%, 49%);
+}
+
+.dollar {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.amount {
+  color: hsl(232, 13%, 33%);
+}
+
+.side {
+  height: 400px;
+  position: relative;
+  top: 50px;
+  color: hsl(233, 13%, 49%);
+}
+
+.col-lg-4 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.center {
+  height: 500px;
+  background-image: linear-gradient(#a3a8f0,	#696fdd);
+  color: white;
+  padding: 50px 0 0;
+}
+
+.middle {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px 50px;
+  background-image: linear-gradient(#a3a8f0,	#696fdd);
+  color: white;
+}
+
+.middle-button {
+  background-image: linear-gradient(white, white);
+  color: #696fdd;
+}
+
+/* toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(#a3a8f0,	#696fdd);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+
+  .side {
+    margin: 10px 50px;
+  }
+
+  .center {
+    margin: 90px 50px 0;
+  }
+
+
+}
